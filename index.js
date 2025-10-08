@@ -132,6 +132,7 @@ async function fetchAndSaveArticles(query, language = 'ro') {
 }
 
 // 🔹 Endpoint principal pentru SINCRONIZAREA ARTICOLElor
+// Exemplu: GET /sync-articles?q=BNR+prognoza&lang=ro
 app.get("/sync-articles", async (req, res) => {
     try {
         const query = req.query.q;
