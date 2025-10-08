@@ -1,0 +1,12 @@
+# Imaginea de baza Node.js
+FROM node:18-slim
+# Creeaza directorul aplicatiei
+WORKDIR /usr/src/app
+# Copiaza package.json
+COPY package*.json ./
+# Instaleaza dependentele
+RUN npm install --omit=dev
+# Copiaza restul codului
+COPY . .
+# Ruleaza serverul folosind scriptul 'start'
+CMD ["npm", "start"]
