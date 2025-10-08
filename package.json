@@ -1,15 +1,15 @@
 {
   "name": "ovb-email-backend",
   "version": "1.0.0",
-  "description": "Backend pentru extragerea emailurilor Outlook si salvarea lor in Firestore",
+  "description": "Backend pentru Analize OVB rulat pe Google Cloud Run.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "node-fetch": "^3.3.2",
-    "firebase-admin": "^12.0.0"
-  },
-  "type": "module"
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "node-fetch": "^3.3.2"
+  }
 }
