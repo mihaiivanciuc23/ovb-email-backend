@@ -172,3 +172,9 @@ app.post("/cleanup-articles", async (req, res) => {
 app.get("/", (req, res) => res.send("Analize OVB backend funcționează ✅"));
 
 app.listen(port, () => console.log(`Server listening on port ${port}`));
+
+
+
+
+
+
